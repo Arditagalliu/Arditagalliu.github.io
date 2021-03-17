@@ -33,6 +33,7 @@ form button {
     border-bottom-right-radius: 10px;
 }
 form input {
+    width: 80vw;
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
 }
