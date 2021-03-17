@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(224, 128, 2);
+}
+header {
+    font-size: 1.25rem;
+}
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input,
+form button {
+    padding: 0.5rem;
+    border: none;
+    font-size: 2rem;
+    background: white;
+}
+form button {
+    color: rgb(224, 128, 2);
+    background: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+form input {
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+form button:hover {
+    color: white;
+    background: rgb(224, 128, 2);
+}
+.todo_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.todo_list {
+    min-width: 30%;
+    list-style: none;
+}
+.todo {
+    border-radius: 10px;
+    margin: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+.todo li {
+    flex: 1;
+}
+.trash_button,
+.completed_button {
+    background: #e93402;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+.trash_button {
+    height: 100%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.completed_button {
+    background: rgb(38, 160, 38);
+}
+.todo_item {
+    padding: 0rem 0.5rem;
+}
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
